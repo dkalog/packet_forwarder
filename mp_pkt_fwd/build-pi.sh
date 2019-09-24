@@ -9,7 +9,7 @@ mkdir -p $INSTALL_DIR/dev
 cd $INSTALL_DIR/dev
 
 if [ ! -d wiringPi ]; then
-    git clone git://wiringPi/wiringPi  || { echo 'Cloning wiringPi failed.' ; exit 1; }
+    git clone git://github.com/wiringPi/wiringPi  || { echo 'Cloning wiringPi failed.' ; exit 1; }
     cd wiringPi
 else
     cd wiringPi
