@@ -8,7 +8,7 @@ INSTALL_DIR="/opt/ttn-gateway"
 mkdir -p $INSTALL_DIR/dev
 cd $INSTALL_DIR/dev
 
-if [ ! -d WiringPi ]; then
+if [ ! -d wiringPi ]; then
     git clone git://github.com/wiringPi/wiringPi  || { echo 'Cloning wiringPi failed.' ; exit 1; }
     cd wiringPi
 else
