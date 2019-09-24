@@ -9,10 +9,10 @@ mkdir -p $INSTALL_DIR/dev
 cd $INSTALL_DIR/dev
 
 if [ ! -d WiringPi ]; then
-    git clone git://github.com/WiringPi/WiringPi  || { echo 'Cloning wiringPi failed.' ; exit 1; }
-    cd WiringPi
+    git clone git://github.com/wiringPi/wiringPi  || { echo 'Cloning wiringPi failed.' ; exit 1; }
+    cd wiringPi
 else
-    cd WiringPi
+    cd wiringPi
     git reset --hard
     git pull
 fi
